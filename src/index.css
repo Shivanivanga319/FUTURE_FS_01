@@ -1,13 +1,121 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --deep-ocean: #0B192C;
+  --teal-wave: #00b4d8;
+  --cyan-foam: #90e0ef;
+  --ice-white: #caf0f8;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: var(--deep-ocean);
+  color: var(--ice-white);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  background-color: rgba(11, 25, 44, 0.9);
+  border-bottom: 1px solid var(--teal-wave);
+}
+
+.logo h2 {
+  margin: 0;
+  color: var(--teal-wave);
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--ice-white);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--cyan-foam);
+}
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: var(--teal-wave);
+  border-bottom: 2px solid var(--cyan-foam);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* Skills Badges */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill-badge {
+  background-color: transparent;
+  border: 1px solid var(--teal-wave);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: var(--cyan-foam);
+}
+
+/* Project Cards */
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: rgba(0, 180, 216, 0.05);
+  border: 1px solid var(--teal-wave);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Buttons */
+.btn-view-resume {
+  display: inline-block;
+  background-color: var(--teal-wave);
+  color: var(--deep-ocean);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn-view-resume:hover {
+  background-color: var(--cyan-foam);
+}
+
+.center-content {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid var(--teal-wave);
+  margin-top: 2rem;
+}
+
+.social-links a {
+  color: var(--teal-wave);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
 }
