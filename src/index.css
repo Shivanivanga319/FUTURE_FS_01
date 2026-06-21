@@ -204,3 +204,70 @@ h2 {
 .social-links a:hover {
   color: var(--ice-white);
 }
+
+
+/* --- Footer & Contact Blocks --- */
+.footer {
+  text-align: center;
+  padding: 3rem 2rem 2rem;
+  border-top: 1px solid var(--teal-wave);
+  margin-top: 4rem;
+  background-color: rgba(11, 25, 44, 0.5);
+}
+
+.footer h3 {
+  color: var(--teal-wave);
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.contact-blocks-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap; /* Keeps them looking good on mobile */
+}
+
+.contact-block {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.8rem 1.5rem;
+  background-color: rgba(0, 180, 216, 0.05);
+  border: 1px solid var(--teal-wave);
+  border-radius: 12px; /* Creates the block shape */
+  color: var(--ice-white);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.contact-block svg {
+  width: 22px;
+  height: 22px;
+  fill: var(--teal-wave);
+  transition: all 0.3s ease;
+}
+
+/* The block float effect */
+.contact-block:hover {
+  transform: translateY(-8px);
+  background-color: rgba(0, 180, 216, 0.15);
+  box-shadow: 0 10px 20px rgba(0, 180, 216, 0.2);
+  border-color: var(--cyan-foam);
+  color: var(--cyan-foam);
+}
+
+.contact-block:hover svg {
+  fill: var(--cyan-foam);
+}
+
+.footer-copyright {
+  color: var(--cyan-foam);
+  font-size: 0.9rem;
+  margin: 0;
+  opacity: 0.7;
+}
